@@ -1,15 +1,63 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>jQuery Template</title>
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>
-       $(function(){
-          });
-    </script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Template</title>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>
+    $(function() {
+
+      $('button').click(function() {
+
+        var name = $('#name').val();
+        var color1 = $('#color1').val();
+        var color2 = $('#color2').val();
+        var team1 = $('#team1').val();
+        var team2 = $('#team2').val();
+       var select = $("select").val();
+       var banner = name + " says " + select;
+        $('p').html(banner);
+     
+$('p').css("background-color",$('input[name="color"]:checked').val());
+
+
+
+      });
+
+    });
+   
+  </script>
+</head>
+
+<body>
+  <h1 >Steelers VS Jets</h1> Name:
+  <input id="name">
   
-  </body>
+  
+    <br>
+    <h2>Favorite NFL Team from NY</h2>
+  <select>
+    <option value="I BLEED YELLOW! GO STEELERS!">Steelers</option>
+    <option value="I BLEED GREEN! GO JETS!">Jets</option>
+
+  </select>
+  <br>
+  <br>
+  
+  <br>
+  <h3>What color is the team you picked? </h3> 
+  <form action="">
+  <input type="radio" name="color" id ="color1" value="yellow"> Yellow<br>
+  <input type="radio" name="color" id ="color2" value="green"> Green<br>
+  
+</form>
+  <br>
+  <br>
+  <p></p>
+  
+  <button>Make Banner!</button>
+
+</body>
+
 </html>
