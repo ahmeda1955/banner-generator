@@ -18,9 +18,9 @@
        var select = $("select").val();
        var banner = name + " says " + select;
         $('p').html(banner);
-     
-$('p').css("background-color",$('input[name="color"]:checked').val());
+     $('p').css("background-color",$('input[name="color"]:checked').val());
 
+$('div').css("background","tan");
 
 
       });
@@ -28,9 +28,10 @@ $('p').css("background-color",$('input[name="color"]:checked').val());
     });
    
   </script>
-</head>
+</head><div>
 
 <body>
+  
   <h1 >Steelers VS Jets</h1> Name:
   <input id="name">
   
@@ -58,6 +59,6 @@ $('p').css("background-color",$('input[name="color"]:checked').val());
   
   <button>Make Banner!</button>
 
-</body>
+</body></div>
 
 </html>
