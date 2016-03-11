@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <title>jQuery Template</title>
-  <style>
-    #pic{
+  <style> /*css style tag*/
+    #pic{ /*image position adjustment*/
       position:relative;
       float: right;
       bottom: 110px;
     }
   </style>
-  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script> 
   <script>
     $(function() {
 
-      $('button').click(function() {
-
+      $('button').click(function() { //function that functions when "button" is CLICKED
+//vvvvvv set the following variables equal to the VALUE of id's in my html
         var name = $('#name').val();
         var color1 = $('#color1').val();
         var color2 = $('#color2').val();
@@ -24,10 +24,10 @@
         var team2 = $('#team2').val();
        var select = $("select").val();
        var banner = name + " says " + select;
-        $('p').html(banner);
+        $('p').html(banner); //when the button is clicked make all p tags equal to the value of banner
      $('p').css("background-color",$('input[name="color"]:checked').val());
-
-$('div').css("background","tan");
+//make background color of p tags equal to value of selected radio option
+$('div').css("background","tan"); //set the color of backround of 'div'to tan
 
 
       });
